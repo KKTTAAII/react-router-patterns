@@ -1,0 +1,39 @@
+.ColorForm {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.ColorForm-container {
+    background-color: whitesmoke;
+    height: 125px;
+    border-radius: 5px;
+    margin-top: 20em;
+    text-align: center;
+    border: solid black;
+    width: 500px;
+}
+
+.Colorform-lebel {
+    margin-left: 1em;
+}
+
+.ColorForm-btn {
+ margin: 1rem;
+ width: 10em;
+ border-style: none;
+ background-color: yellowgreen;
+ height: 2em;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.ColorForm-btn:hover {
+    border-style: solid;
+    border-color: black;
+}
+
+.ColorForm-input {
+    margin: 1rem;
+}

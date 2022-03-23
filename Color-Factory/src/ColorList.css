@@ -1,0 +1,18 @@
+.ColorList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ColorList-header {
+    font-size: 2em;
+}
+
+.ColorList-link {
+    text-decoration: none;
+    color: grey;
+}
+
+.ColorList-link:hover {
+    text-decoration: underline;
+}

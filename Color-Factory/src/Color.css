@@ -1,0 +1,29 @@
+.Color {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    width: 100wv;
+}
+
+.Color-description {
+    width: 500px;
+    position: absolute;
+    top: 3em;
+    font-size: 5em;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+}
+
+.Color-back-btn {
+    position: absolute;
+    top: 2em;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.Color-back-btn:hover {
+    color: black;
+}

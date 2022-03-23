@@ -7,14 +7,16 @@ const ColorList = ({ colors }) => {
   const allColors = colors.map(color => {
     return (
       <div key={uuidv4()}>
-        <Link to={`/colors/${color.name}`}>{color.name}</Link>
+        <Link to={`/colors/${color.name}`} className="ColorList-link">
+          {color.name}
+        </Link>
       </div>
     );
   });
 
   return (
-    <div>
-      <div>Please select a color</div>
+    <div className="ColorList">
+      <div className="ColorList-header">Please select a color</div>
       <div>{allColors}</div>
     </div>
   );

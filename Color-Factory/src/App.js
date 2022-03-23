@@ -5,9 +5,9 @@ import Home from "./Home";
 import ColorForm from "./ColorForm";
 import Color from "./Color";
 import useColor from "./hook";
-import findColor from "./helper";
+import { findColor } from "./helpers";
 
-function App() {
+const App = () => {
   const [colors, addColor] = useColor();
   return (
     <BrowserRouter>
@@ -29,6 +29,6 @@ function App() {
       </Switch>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

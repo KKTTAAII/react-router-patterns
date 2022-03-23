@@ -1,0 +1,23 @@
+.Home-header {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 5em;
+}
+
+.Home-new-color-link {
+    padding: .2em;
+    text-decoration: none;
+    font-size: 3em;
+    color: black;
+    border: solid;
+    border-radius: 5px;
+}
+
+.Home-new-color-link:hover {
+    background-color: rgb(115, 175, 155);
+}
+
+.Home-new-color-link-container {
+    margin: 20px;
+    text-align: center;
+}

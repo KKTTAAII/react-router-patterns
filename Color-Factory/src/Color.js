@@ -1,18 +1,23 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
+import "./Color.css";
 
 const Color = ({ color }) => {
   if (color.length === 0) {
     return <Redirect to="/colors" />;
   }
+
   return (
     <div
+      className="Color"
       style={{
         backgroundColor: color.color,
       }}
     >
-      <div>This is color {color.name}</div>
-      <div>Isn't this a cool {color.name} color</div>
+      <div className="Color-description">This is color {color.name}</div>
+      <Link to="/colors" className={"Color-back-btn"}>
+        Go Back
+      </Link>
     </div>
   );
 };
