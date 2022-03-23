@@ -10,7 +10,7 @@ import tubby from "./assets/tubby.jpg";
 import duke from "./assets/duke.jpg";
 import perry from "./assets/perry.jpg";
 
-function App({ dogs }) {
+const App = ({ dogs }) => {
   const names = dogs.map(dog => dog.name);
   //the above line looks out of place. How can I improve it?
   return (
@@ -25,7 +25,7 @@ function App({ dogs }) {
           path="/dogs/:dogName"
           render={props => (
             <DogDetails
-              doggo={findDog(dogs, props.match.params.dogName)}
+              dog={findDog(dogs, props.match.params.dogName)}
               //How can I destructure props.match.params.dogName?
             />
           )}
@@ -34,7 +34,7 @@ function App({ dogs }) {
       </Switch>
     </BrowserRouter>
   );
-}
+};
 
 App.defaultProps = {
   dogs: [

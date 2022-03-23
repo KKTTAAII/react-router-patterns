@@ -37,7 +37,9 @@ const ColorForm = ({ addColor }) => {
             Color Name:
           </label>
           {createInput("text", "name", colorData.name, handleChange)}
-          {isInvalid && isTouched && <span>{WARNING}</span>}
+          {isInvalid && isTouched && (
+            <span className="ColorForm-error">{WARNING}</span>
+          )}
           <label htmlFor="color" className="Colorform-lebel">
             Color:
           </label>

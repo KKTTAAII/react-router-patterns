@@ -3,12 +3,12 @@ import { Redirect } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import "./DogDetails.css";
 
-const DogDetails = ({ doggo }) => {
-  if (doggo.length === 0) {
+const DogDetails = ({ dog }) => {
+  if (dog.length === 0) {
     return <Redirect to="/dogs" />;
   }
 
-  const { facts, age, src, name } = doggo;
+  const { facts, age, src, name } = dog;
   const allFacts = facts.map(fact => <li key={uuidv4()}>{fact}</li>);
 
   return (

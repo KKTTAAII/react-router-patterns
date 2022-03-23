@@ -4,7 +4,9 @@ import { v4 as uuidv4 } from "uuid";
 import "./ColorList.css";
 
 const ColorList = ({ colors }) => {
-  const allColors = colors.map(color => {
+  //make the new color at the top of the list
+  const reversedColor = colors.reverse();
+  const allColors = reversedColor.map(color => {
     return (
       <div key={uuidv4()}>
         <Link to={`/colors/${color.name}`} className="ColorList-link">

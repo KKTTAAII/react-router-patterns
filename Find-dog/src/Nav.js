@@ -5,7 +5,7 @@ import "./Nav.css";
 
 const Nav = ({ names }) => {
   const allDogsLinks = names.map(name => (
-    <NavLink exact to={`/dogs/${name}`} key={uuidv4()} className={"Nav-link"}>
+    <NavLink exact to={`/dogs/${name}`} key={uuidv4()} className="Nav-link">
       {name}
     </NavLink>
   ));

@@ -37,3 +37,9 @@
 .ColorForm-input {
     margin: 1rem;
 }
+
+.ColorForm-error {
+    display: block;
+    color: red;
+    font-size: small;
+}
